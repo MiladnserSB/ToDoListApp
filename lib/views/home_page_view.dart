@@ -9,7 +9,8 @@ class HomePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+        },
          shape: const CircleBorder(),
         backgroundColor: kPriamryColor,
         child: const Icon(
