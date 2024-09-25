@@ -10,3 +10,5 @@ class HomePageViewBodyLowerPart extends StatelessWidget {
     return Container(color: Colors.white,);
   }
 }
+
+

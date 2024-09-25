@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-Color kPriamryColor = Color(0xFF661d9f);
+Color kPriamryColor = const Color(0xFF661d9f);
