@@ -31,7 +31,7 @@ class TaskItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Wrapping the title and subtitle in an Expanded widget
-                  Expanded(
+                 const Expanded(
                     child: ListTile(
                       title: Text(
                         'Flutter Tips - Flutter Flutter Tips - Flutter Flutter Tips - Flutter Flutter Tips - Flutter Flutter Tips - Flutter',
@@ -42,17 +42,6 @@ class TaskItem extends StatelessWidget {
                         maxLines: 5,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      // subtitle: Padding(
-                      //   padding: const EdgeInsets.only(top: 12.0, bottom: 4),
-                      //   child: Text(
-                      //     'Learn how to create responsive layouts in Flutter.',
-                      //     style: TextStyle(
-                      //         color: Colors.black.withOpacity(0.5),
-                      //         fontSize: 16),
-                      //     maxLines: 2,
-                      //     overflow: TextOverflow.ellipsis,
-                      //   ),
-                      // ),
                     ),
                   ),
                   // Aligning the delete icon and checkbox vertically

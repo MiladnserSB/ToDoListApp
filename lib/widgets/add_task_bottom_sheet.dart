@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do_list_app/widgets/add_task_form.dart';
 import 'package:to_do_list_app/widgets/custom_button.dart';
 import 'package:to_do_list_app/widgets/custom_text_field.dart';
 
@@ -9,39 +10,9 @@ class AddTaskBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: AddNoteForm(),
+      child: AddTaskForm(),
     );
   }
 }
 
-class AddNoteForm extends StatelessWidget {
-  AddNoteForm({
-    super.key,
-  });
-  final GlobalKey<FormState> formKey = GlobalKey();
-  @override
-  Widget build(BuildContext context) {
-    return Form(
-      key: formKey,
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 24,
-          ),
-          const CustomTextField(
-            hint: 'Title',
-            maxLines: 5,
-          ),
-          const SizedBox(
-            height: 35,
-          ),
-          CustomButton(
-              title: 'Add',
-              onTap: () {
-                // print('object');
-              })
-        ],
-      ),
-    );
-  }
-}
+
