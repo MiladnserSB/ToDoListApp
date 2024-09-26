@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:to_do_list_app/constants.dart';
-import 'package:to_do_list_app/widgets/custom_app_bar.dart';
+import 'package:to_do_list_app/widgets/home_page_view_app_bar.dart';
 
 class HomePageViewBodyUpperPart extends StatefulWidget {
   const HomePageViewBodyUpperPart({super.key});
@@ -27,13 +27,14 @@ class _HomePageViewBodyUpperPartState extends State<HomePageViewBodyUpperPart> {
     return Container(
       height: MediaQuery.of(context).size.height * 0.35,
       decoration: BoxDecoration(
-        color: kPriamryColor,
+        color: kPrimaryColor,
+        image: DecorationImage(image: AssetImage('assets/images/home_view_image.png'), fit: BoxFit.fill),
         borderRadius: const BorderRadius.vertical(bottom: Radius.circular(22)),
       ),
       child: Column(
         children: [
           const SizedBox(height: 35),
-          const CustomAppBar(),
+          const HomePageViewAppBar(),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),

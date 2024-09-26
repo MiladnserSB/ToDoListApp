@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do_list_app/views/edit_task_view.dart';
 
 class TaskItem extends StatelessWidget {
   const TaskItem({super.key});
@@ -9,13 +10,13 @@ class TaskItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: GestureDetector(
         onTap: () {
-          // Navigator.of(context).push(
-          //   MaterialPageRoute(
-          //     builder: (context) {
-          //       return EditNoteView();
-          //     },
-          //   ),
-          // );
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) {
+                return EditTaskView();
+              },
+            ),
+          );
         },
         child: Container(
           padding: const EdgeInsets.all(16),
