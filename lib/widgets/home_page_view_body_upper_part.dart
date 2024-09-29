@@ -57,7 +57,7 @@ class _HomePageViewBodyUpperPartState
       height: MediaQuery.of(context).size.height * 0.35,
       decoration: BoxDecoration(
         color: kPrimaryColor,
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage('assets/images/home_view_image.png'),
           fit: BoxFit.fill,
         ),

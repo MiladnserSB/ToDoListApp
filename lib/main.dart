@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:to_do_list_app/blocs/tasks/bloc/tasks_bloc.dart';
 import 'package:to_do_list_app/models/task_model.dart';
 import 'package:to_do_list_app/views/home_page_view.dart';
+import 'package:to_do_list_app/views/splash_view.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -22,7 +23,7 @@ class ToDoListApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(fontFamily: 'Poppins'),
         debugShowCheckedModeBanner: false,
-        home: HomePageView(),
+        home: SplashView(),
       ),
     );
   }

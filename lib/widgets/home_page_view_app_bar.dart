@@ -12,8 +12,8 @@ class HomePageViewAppBar extends StatelessWidget {
       child: Row(
         children: [
           const Text(
-            'To Do List App',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            'TODO',
+            style: TextStyle(fontSize: 25, color: Colors.white),
           ),
           const Spacer(),
           const Text(
